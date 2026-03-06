@@ -63,9 +63,9 @@ nvmのインストール終了後，`nvm install 24.14.0`でNode.jsをインス�
 `npm install tailwindcss @tailwindcss/vite`
 
 viteを使っているので，プラグインの追加が必要なパッケージがあるみたいです.
-そのライブラリのガイドを参照すると詳しいことが書いてあります.
-
-```javascript:例
+そのライブラリのガイドを参照すると詳しいことが書いてあります.  
+例
+```javascript
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
 
