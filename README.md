@@ -23,7 +23,7 @@ macOS/Linux ターミナルで以下のコマンドを入力
 
 flask起動
 
-`uv run -- flask --app app(拡張子を除いたpythonファイル名) run -p 5000`
+`uv run -m app.app`
 
 依存関係の同期（インストール）
 runをする前にこのコマンドを実行しておく
@@ -65,6 +65,7 @@ nvmのインストール終了後，`nvm install 24.14.0`でNode.jsをインス�
 viteを使っているので，プラグインの追加が必要なパッケージがあるみたいです.
 そのライブラリのガイドを参照すると詳しいことが書いてあります.  
 例
+
 ```javascript
 import { defineConfig } from 'vite'
 import tailwindcss from '@tailwindcss/vite'
