@@ -1,42 +1,111 @@
-#root {
-  max-width: 1280px;
+body {
+  margin: 0;
+  background-color: #f5f7fb;
+  font-family: Arial, sans-serif;
+  color: #202124;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.mail-window {
+  max-width: 900px;
   margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+  background: white;
+  border: 1px solid #dadce0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.15);
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.mail-toolbar {
+  display: flex;
+  gap: 8px;
+  padding: 12px 16px;
+  background: #f8fafd;
+  border-bottom: 1px solid #e0e3e7;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.mail-toolbar button {
+  border: none;
+  background: transparent;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.mail-toolbar button:hover {
+  background: #e8eaed;
 }
 
-.card {
-  padding: 2em;
+.mail-header {
+  padding: 24px 32px 12px;
 }
 
-.read-the-docs {
-  color: #888;
+.mail-header h1 {
+  margin: 0 0 20px;
+  font-size: 28px;
+  font-weight: 500;
+}
+
+.sender-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #5f6368;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.sender-name {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.sender-email {
+  font-size: 13px;
+  color: #5f6368;
+  margin-top: 2px;
+}
+
+.mail-body {
+  padding: 16px 32px 32px;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.mail-body p {
+  margin: 0 0 12px;
+}
+
+.mail-link {
+  display: inline-block;
+  margin-top: 12px;
+  color: #1a73e8;
+  text-decoration: underline;
+}
+.next-area {
+  padding: 20px 32px 32px;
+  text-align: right;
+}
+
+.next-area button {
+  padding: 10px 18px;
+  border: none;
+  border-radius: 8px;
+  background: #1a73e8;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
 }
